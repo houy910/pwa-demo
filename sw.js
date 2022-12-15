@@ -124,7 +124,7 @@
 //     return fresh;
 //   }
 // }
-const version = "offline-cache-v3";
+const version = "offline-cache-v4";
 
 // Serverice Worker 安装成功后触发该事件
 self.addEventListener("install", function (event) {
@@ -175,7 +175,7 @@ self.addEventListener("fetch", function (event) {
         // 请求成功的话，将请求缓存起来。
         var responseClone = httpRes.clone();
         caches.open(version).then(function (cache) {
-          // cache.put(event.request, responseClone);
+          cache.put(event.request, responseClone);
         });
 
         return httpRes;
