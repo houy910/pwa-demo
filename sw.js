@@ -175,7 +175,7 @@ self.addEventListener("fetch", function (event) {
         // 请求成功的话，将请求缓存起来。
         var responseClone = httpRes.clone();
         caches.open(version).then(function (cache) {
-          cache.put(event.request, responseClone);
+          // cache.put(event.request, responseClone);
         });
 
         return httpRes;
