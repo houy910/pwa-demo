@@ -124,7 +124,7 @@
 //     return fresh;
 //   }
 // }
-const version = "offline-cache-v6";
+const version = "offline-cache-v1";
 
 // Serverice Worker 安装成功后触发该事件
 self.addEventListener("install", function (event) {
