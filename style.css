@@ -34,7 +34,7 @@ h1 {
     background-position: -2000vw;
   }
 }
-.add-button {
+/* .add-button {
   position: fixed;
   top: 1px;
   left: 1px;
@@ -42,4 +42,4 @@ h1 {
   height: 30px;
   border-radius: 3px;
   cursor: pointer;
-}
+} */
